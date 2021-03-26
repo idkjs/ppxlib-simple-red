@@ -1,0 +1,31 @@
+{
+    "name": "ppx-simple-test",
+    "version": "3.1.0",
+    "namespace": false,
+    "bsc-flags": [ "-bs-super-errors", "-bs-no-version-header" ],
+    "refmt": 3,
+    "gentypeconfig": {
+        "language": "typescript",
+        "importPath": "relative",
+        "shims": {
+            "Js": "Js",
+            "Dom": "Dom",
+            "ReasonPervasives": "ReasonPervasives"
+        }
+    },
+    "suffix": ".bs.js",
+    "package-specs": {
+        "module": "commonjs",
+        "in-source": true
+    },
+    "sources": [
+        {
+            "dir": "test_bs"
+        }
+    ],
+    "ppx-flags": [
+        [ "./ppx.exe" ]
+    ],
+    "bs-dependencies": [],
+    "bs-dev-dependencies": []
+}
